@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pokémon Clicker</h1>
+    <div id="starter-selection">
+        <h2>Choose Your Starter</h2>
+        <button onclick="chooseStarter('bulbasaur')">Bulbasaur</button>
+        <button onclick="chooseStarter('charmander')">Charmander</button>
+        <button onclick="chooseStarter('squirtle')">Squirtle</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <h2 id="pokemon-name"></h2>
+        <img id="pokemon-img" src="" alt="Pokémon">
+        <p>Pokédollars: <span id="money">0</span></p>
+        <button id="click-btn" onclick="clickPokemon()">Click</button>
+        <div>
+            <button id="evolve1" onclick="evolve(1)">Evolve</button>
+            <button id="evolve2" onclick="evolve(2)" disabled>Final Evolution</button>
+            <button id="mega" onclick="evolve(3)" disabled>Mega Evolve</button>
+            <button id="gigantimax" onclick="gigantimax()" disabled>Gigantimax!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
